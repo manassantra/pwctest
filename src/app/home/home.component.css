@@ -1,0 +1,15 @@
+nav {
+    margin-top: 20px;
+}
+.img {
+    border-radius: 75px 75px;
+    margin-left: -5px;
+}
+.ico {
+    padding: 1px 5px 1px 5px;
+    border-radius: 45px 45px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}

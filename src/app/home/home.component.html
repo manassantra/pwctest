@@ -1,0 +1,40 @@
+<div class="container mb-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li> 
+          <li class="breadcrumb-item active" aria-current="page">All Products</li>
+        </ol>
+    </nav>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="row justify-content-around">
+                <div class="card col-lg-2 col-md-3 col-sm-1 m-2" *ngFor="let p of products">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between" style="margin-bottom: -30px !important; z-index: 999 !important; position: relative;">
+                            <button class="btn btn-outline-warning ico"><i class="bi bi-heart"></i></button>
+                            <button class="btn btn-outline-primary ico"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+                        <a href="">
+                            <img class="card-img-top" src={{p.avatar}} alt="" height="150" width="250">
+                        </a>
+                    </div>
+                    <div class="row card-header">
+                        <p>
+                            <img *ngFor="let i of p.social" class="img" src={{i.img}} alt="" height="20" width="20">
+                        </p>
+                        <strong class="d-flex justify-content-around"> 
+                           <b class="d-inline-block text-truncate" style="max-width: 100px;">{{p.name}}</b> 
+                           <b>#{{p.srlNo}}</b>
+                        </strong>
+                        <strong class="d-flex justify-content-center"> 
+                            <span>Price : &nbsp; </span> 
+                            <p> {{p.price |  currency:'INR'}}</p>
+                        </strong>
+                        <button class="btn btn-sm btn-outline-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
