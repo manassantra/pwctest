@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
+## API Server [ https://mockapi.io/ ]
+-> API Endpoind : https://62739dbc345e1821b21e702c.mockapi.io/v1/api/
+-> GET ALL : /Product
+-> GET by ID : /Product/:id
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
